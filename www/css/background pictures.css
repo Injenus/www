@@ -1,0 +1,15 @@
+#text-in-p {
+  /*background-color: #cf9055;
+  background-image: url('images/image.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;*/
+  color: #4dc47e;
+  background: #cf9055 url('images/image.jpeg') no-repeat center center;
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#some_id {
+  height: 2000px;
+}
