@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <style>
+    * {padding: 0; margin: 0;}
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /*grid-template-columns: 70% 30%;
+      /*grid-column-gap: 1em;
+      grid-row-gap: 1em;*/
+      grid-gap: 1em;
+      /*grid-auto-rows: 150px;*/
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .included {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+      grid-auto-rows: 80px;
+    }
+
+    .wrapper > div{
+      padding: 1em;
+      background-color: #eb7181;
+    }
+
+    .wrapper > div.light {
+      padding: 1em;
+      background-color: #edb1b9;
+    }
+
+    .included > div {
+      background-color: #ba241c;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis eius minus rem, alias eos! Eligendi totam magni, officiis quibusdam delectus soluta consequuntur, illo minus suscipit, distinctio voluptatem!
+    </div>
+    <div class="light">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis eius minus rem, alias eos! Eligendi totam magni, officiis quibusdam delectus soluta consequuntur, illo minus suscipit, distinctio voluptatem!
+    </div>
+    <div>
+      <div class="included">
+        <div>Lorem ipsum.</div>
+        <div>Lorem ipsum.</div>
+        <div>Lorem ipsum.</div>
+        <div>Lorem ipsum.</div>
+      </div>
+    </div>
+    <div class="light">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi recusandae similique voluptatum velit unde debitis dignissimos omnis, tenetur blanditiis, dolorum quisquam. Placeat omnis qui assumenda officiis necessitatibus cupiditate nesciunt praesentium dolores iste, ut perspiciatis aperiam nam, unde dolor optio ipsa aut quam nihil autem. Similique autem repellendus voluptatibus, modi quia dolores, sed atque omnis!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis eius minus rem, alias eos! Eligendi totam magni, officiis quibusdam delectus soluta consequuntur, illo minus suscipit, distinctio voluptatem!
+    </div>
+    <div class="light">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis eius minus rem, alias eos! Eligendi totam magni, officiis quibusdam delectus soluta consequuntur, illo minus suscipit, distinctio voluptatem!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis eius minus rem, alias eos! Eligendi totam magni, officiis quibusdam delectus soluta consequuntur, illo minus suscipit, distinctio voluptatem!
+    </div>
+    <div class="light">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis eius minus rem, alias eos! Eligendi totam magni, officiis quibusdam delectus soluta consequuntur, illo minus suscipit, distinctio voluptatem!
+    </div>
+  </div>
+</body>
+</html>
